@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhP</title>
+    <link rel="stylesheet" href="css/botones.css">
+</head>
+<body>
+    <h1>hola mundo</h1>
+    <br>
+    <form action="validar-sesion.php" method="post">
+        <fieldset>
+            <legend>Iniciar Sesion</legend>
+            <div>
+                <label for="userTxt">Usuario</label>
+                <input type="text" name="user" id="userTxt" required>
+
+            </div>
+            <div>
+                <label for="pedTxt">Contraseña</label>
+                <input type="password" id="pwdTxt" name="pwd" required>
+            </div>
+            <div>
+                <button type="submit" class="btn"> Iniciar Sesión</button>
+            </div>
+        </fieldset>
+    </form>
+    <a href="inicio.php">Ir a inicio</a>
+    <a href="clases.php">Ir a clases</a>
+</body>
+</html>
