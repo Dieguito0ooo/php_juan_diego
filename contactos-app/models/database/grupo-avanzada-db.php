@@ -29,7 +29,7 @@ class GrupoAvanzadaDB
         $this->conexDb->close();
     }
 
-    public function execSQL($sql,$isSelect, ...$bindParam=null)
+    public function execSQL($sql,$isSelect, ...$bindParam)
     {
         $prepare = $this->conexDb->prepare($sql);
         if (!empty($bindParam)) {

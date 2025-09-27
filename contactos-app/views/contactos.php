@@ -4,7 +4,7 @@ require __DIR__ ."/../controllers/contactos-controller.php";
 use App\Controllers\ContactosController;
 
 $contactosController = new ContactosController();
-$contactos = $contactosController-> queryAllContactos()
+$contactos = $contactosController-> queryAllContactos();
 
 ?>
 

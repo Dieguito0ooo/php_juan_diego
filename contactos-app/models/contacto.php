@@ -3,7 +3,7 @@ namespace App\Models;
 
 require __DIR__ ."/sql_models/model.php";
 require __DIR__ ."/sql_models/sql_contacto.php";
-require __DIR__ ."/databases/grupo-avanzada-db.php";
+require __DIR__ ."/database/grupo-avanzada-db.php";
 
 use App\Models\SQLModels\Model;
 use App\Models\SQLModels\SqlContacto;
@@ -18,7 +18,7 @@ class Contacto extends Model
 
     public function get($prop)
     {
-        reset($this->{$prop});
+        return($this->{$prop});
     }
 
     public function set($prop, $value)
@@ -43,6 +43,7 @@ class Contacto extends Model
             }
 
         }
+        return $contactos;
     }
     public function find($id){}
     public function insert($contacto){}
