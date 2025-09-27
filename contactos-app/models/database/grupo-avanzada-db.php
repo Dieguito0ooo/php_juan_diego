@@ -1,6 +1,9 @@
 <?php
+namespace App\Models\Databases;
 
-class GrupoAvanzada
+use mysqli;
+
+class GrupoAvanzadaDB
 {
     private $hostDb = "localhost";
     private $userDb = "root";

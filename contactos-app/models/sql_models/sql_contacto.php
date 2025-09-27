@@ -1,4 +1,5 @@
 <?php
+namespace App\Models\SQLModels;
 
 class SqlContacto{
     public static function selectAll(){
