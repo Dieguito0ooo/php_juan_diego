@@ -24,6 +24,19 @@ class ContactosController
         $contacto -> set('email', $request['email']);
         return $contacto->insert();
     }
+
+       public function updateContacto($request){
+        if (empty($request['nombre']) || empty($request['id'])) {
+            return false;
+        }
+        $contacto = new Contacto();
+        $contacto -> set('id', $request['id']);
+        $contacto -> set('nombre', $request['nombre']);
+        $contacto -> set('telefono', $request['telefono']);
+        $contacto -> set('email', $request['email']);
+        return $contacto->update(); // Cambiado de insert() a update()
+    }
+
 }
 
 ?>

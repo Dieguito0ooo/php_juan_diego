@@ -17,7 +17,7 @@ class SqlContacto{
         return $sql;
     }
 
-    public static function update($data){
+    public static function update(){
         $sql = "update contactos set";
         $sql .= "nombre=?,";
         $sql .= "telefono=?,";

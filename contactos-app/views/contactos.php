@@ -19,6 +19,7 @@ $contactos = $contactosController-> queryAllContactos();
     <h1>Lista de Contactos</h1>
     <br>
     <a href="contacto-form.php">Crear Contacto</a>
+   
     <table>
         <thead>
             <tr>
@@ -34,6 +35,7 @@ $contactos = $contactosController-> queryAllContactos();
                     echo '  <td>' .$contacto->get('nombre').'</td>';
                     echo '  <td>' .$contacto->get('telefono').'</td>';
                     echo '  <td>' .$contacto->get('email').'</td>';
+                    echo '  <td>  <a href="actuCont-form.php?id=' . $contacto->get('id') . '">Modificar</a> </td>';
                     echo '</tr>';
                 }
                 if (count($contactos) == 0) {
