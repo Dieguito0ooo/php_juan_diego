@@ -11,7 +11,7 @@ class SqlContacto{
         $sql = "select * from contactos id =?";
     }
 
-    public static function insertInto($data){
+    public static function insertInto(){
         $sql = "insert into contactos (nombre, telefono, email) values";
         $sql .= "(?,?,?)";
         return $sql;
